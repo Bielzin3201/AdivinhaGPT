@@ -1,0 +1,14 @@
+Random random = new Random();
+int numeroAle = random.Next(1, 11);  // Número aleatório gerado entre 1 e 10
+
+Console.WriteLine("Tente adivinhar o número que o computador escolheu de 1 a 10");
+int numeroJogador = Convert.ToInt32(Console.ReadLine());  // O jogador faz o palpite
+
+if(numeroJogador == numeroAle)  // Compara o palpite com o número aleatório
+{
+    Console.WriteLine("Parabéns, você acertou em cheio!");
+}
+else
+{
+    Console.WriteLine("Você errou, o número que o computador escolheu foi " + numeroAle);
+}
